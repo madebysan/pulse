@@ -45,9 +45,16 @@ struct ContentView: View {
 
                 Spacer()
 
-                // Bottom area — reset button or tap hint
-                bottomArea
-                    .padding(.bottom, 60)
+                // Tap hint
+                if engine.state == .idle {
+                    Image(systemName: "hand.tap.fill")
+                        .font(.system(size: 24))
+                        .foregroundStyle(Theme.textTertiary)
+                        .padding(.bottom, 60)
+                } else {
+                    Spacer()
+                        .frame(height: 84)
+                }
             }
 
             // Full-screen tap target (behind nothing, above background)
@@ -150,33 +157,6 @@ struct ContentView: View {
                 .font(Theme.sublabel)
                 .foregroundStyle(Theme.textTertiary)
                 .tracking(1.5)
-        }
-    }
-
-    // MARK: - Bottom Area
-
-    @ViewBuilder
-    private var bottomArea: some View {
-        if engine.state != .idle {
-            Button {
-                withAnimation(Theme.stateTransition) {
-                    engine.reset()
-                }
-            } label: {
-                Text("RESET")
-                    .font(Theme.label)
-                    .foregroundStyle(Theme.textSecondary)
-                    .tracking(2)
-                    .padding(.horizontal, 32)
-                    .padding(.vertical, 14)
-                    .background(Theme.surface)
-                    .clipShape(Capsule())
-            }
-        } else {
-            // Subtle tap indicator
-            Image(systemName: "hand.tap.fill")
-                .font(.system(size: 24))
-                .foregroundStyle(Theme.textTertiary)
         }
     }
 
