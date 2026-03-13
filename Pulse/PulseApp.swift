@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct PulseTapApp: App {
+struct PulseApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

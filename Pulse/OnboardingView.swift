@@ -71,7 +71,7 @@ struct OnboardingView: View {
                 isPresented = false
             }
         } message: {
-            Text("PulseTap is not a medical device. Results are estimates based on your tapping and should not be used for medical diagnosis or treatment decisions.")
+            Text("Pulse is not a medical device. Results are estimates based on your tapping and should not be used for medical diagnosis or treatment decisions.")
         }
     }
 
