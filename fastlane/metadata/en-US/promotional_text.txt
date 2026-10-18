@@ -1,0 +1,1 @@
+Check a pulse manually when you do not have a watch or sensor nearby.

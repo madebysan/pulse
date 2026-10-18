@@ -1,0 +1,1 @@
+pulse,heart rate,bpm,tap,fitness,health,beats,manual
