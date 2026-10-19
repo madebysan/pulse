@@ -11,10 +11,7 @@ DerivedData/
 *.swp
 *~
 
-# Local-only docs
-plan.md
-notes.md
-IDEAS.md
+# Local session files
 checkpoint.json
 
 # Fastlane generated output

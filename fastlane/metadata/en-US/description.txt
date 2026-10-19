@@ -1,7 +1,0 @@
-Pulse is a small utility for estimating heart rate from taps.
-
-Feel a pulse on your neck or wrist, then tap the screen once for each beat. Pulse reads the rhythm and shows an estimated BPM. There are no accounts, ads, camera access, microphone access, analytics, or network requests.
-
-Use Pulse for quick personal checks, workouts, breathing exercises, or moments when you want a simple BPM estimate without a wearable.
-
-Pulse is not a medical device. Results are estimates based on your taps and should not be used for diagnosis, treatment, or medical decisions.
